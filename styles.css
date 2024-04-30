@@ -11,6 +11,7 @@ main {
 
 section {
   height: 100vh;
+  
 }
 
 nav {
@@ -103,4 +104,25 @@ section.skills ul li {
   flex-direction: column;
   justify-content: center;
   gap: 0.5rem;
+}
+
+section.skills ul li .skill-shadow {
+  background-color:  rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+
+section.skills ul li .skill-bar {
+  background-color: red;
+  border-radius: 1rem;
+  font-style: italic;
+  padding: 1rem 0;
+  font-size: 1.3em;
+}
+
+.skill-bar span.value {
+  margin-left: 1rem;
+}
+
+.skill-bar span.value::after {
+content: "%";
 }
