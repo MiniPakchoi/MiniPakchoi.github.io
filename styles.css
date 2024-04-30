@@ -62,12 +62,24 @@ hero-text h2 {
   border-radius: 20px;
 }
 
+.hero-text p::before {
+  content: "“";
+  font-size: 2em;
+  color: #fc810dd5;
+}
+
+.hero-text p::after {
+  content: "”";
+  font-size: 2em;
+  color: #fc810dd5;
+}
+
 .text-accent {
-  color: #fc0db0;
+  color: #fc810dd5;
 }
 
 .text-primary {
-  color: #8d1cf7;
+  color: #03f503;
 }
 
 .hero img {
