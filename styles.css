@@ -1,7 +1,13 @@
+:root {
+  --background-color: #121212;
+  --accent-color: #fc810dd5;
+  --primary-color: var(--primary-color);
+}
+
 body {
   margin: 0;
   padding: 0;
-  background-color: #121212;
+  background-color: var(--background-color);
 }
 
 main {
@@ -11,7 +17,6 @@ main {
 
 section {
   height: 100vh;
-  
 }
 
 nav {
@@ -33,6 +38,7 @@ nav ul li a {
 section.hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  place-items: center;
   place-content: center;
   gap: 20px;
 }
@@ -50,7 +56,7 @@ section.hero .hero-text {
   margin-bottom: 0;
 }
 
-hero-text h2 {
+.hero-text h2 {
   font-size: 1.4em;
   margin: 0;
 }
@@ -60,19 +66,20 @@ hero-text h2 {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 1rem;
   margin: 2rem;
-  border-radius: 20px;
+  border-radius: 15px;
+  width: 40ch;
 }
 
 .hero-text p::before {
   content: "“";
   font-size: 2em;
-  color: #fc810dd5;
+  color: var(--accent-color);
 }
 
 .hero-text p::after {
   content: "”";
   font-size: 2em;
-  color: #fc810dd5;
+  color: var(--accent-color);
 }
 
 .text-accent {
@@ -96,6 +103,8 @@ section.skills ul {
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
+  gap: 5rem;
+  justify-content: center;
 }
 
 section.skills ul li {
@@ -107,13 +116,14 @@ section.skills ul li {
 }
 
 section.skills ul li .skill-shadow {
-  background-color:  rgba(0, 0, 0, 0.1);
+  background-color: rgba(100, 100, 100, 0.7);
   border-radius: 1rem;
 }
 
 section.skills ul li .skill-bar {
   background-color: red;
   border-radius: 1rem;
+  width: 90%;
   font-style: italic;
   padding: 1rem 0;
   font-size: 1.3em;
@@ -124,5 +134,5 @@ section.skills ul li .skill-bar {
 }
 
 .skill-bar span.value::after {
-content: "%";
+  content: "%";
 }

@@ -16,7 +16,7 @@
       </ul>
     </nav>
     <main>
-      <section class="hero">
+      <section id="hero" class="hero">
         <div class="hero-text">
           <h2 class="text-accent">Hi, ich bin</h2>
           <h1>Jade</h1>
@@ -29,14 +29,18 @@
         </div>
         <img src="https://picsum.photos/400/600" alt="A picture of me" />
       </section>
-      <section class="skills">
+      <section id="skills" class="skills">
         <ul>
           <li>
             <h3>HTML</h3>
             <div class="skill-shadow">
               <div
                 class="skill-bar"
-                style="width: 20%; background-color: green"
+                style="
+                  width: 20%;
+                  background-color: green;
+                  box-shadow: 5px 0 15px green;
+                "
               >
                 <span class="value">20</span>
               </div>
@@ -45,7 +49,14 @@
           <li>
             <h3>CSS</h3>
             <div class="skill-shadow">
-              <div class="skill-bar" style="width: 5%; background-color: blue">
+              <div
+                class="skill-bar"
+                style="
+                  width: 5%;
+                  background-color: blue;
+                  box-shadow: 5px 0 15px blue;
+                "
+              >
                 <span class="value">5</span>
               </div>
             </div>
@@ -55,9 +66,13 @@
             <div class="skill-shadow">
               <div
                 class="skill-bar"
-                style="width: 1%; background-color: orangered"
+                style="
+                  width: 5%;
+                  background-color: orangered;
+                  box-shadow: 5px 0 15px orangered;
+                "
               >
-                <span class="value">1</span>
+                <span class="value">5</span>
               </div>
             </div>
           </li>
@@ -66,7 +81,11 @@
             <div class="skill-shadow">
               <div
                 class="skill-bar"
-                style="width: 50%; background-color: blueviolet"
+                style="
+                  width: 50%;
+                  background-color: blueviolet;
+                  box-shadow: 5px 0 15px blueviolet;
+                "
               >
                 <span class="value">50</span>
               </div>
@@ -74,8 +93,8 @@
           </li>
         </ul>
       </section>
-      <section class="timeline"></section>
-      <section class="projects">
+      <section id="timeline" class="timeline"></section>
+      <section id="projects" class="projects">
         <ul>
           <li>
             <img src="https://picsum.photos/200/200" alt="Project 1 Image" />
