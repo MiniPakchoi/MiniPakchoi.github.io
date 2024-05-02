@@ -136,3 +136,47 @@ section.skills ul li .skill-bar {
 .skill-bar span.value::after {
   content: "%";
 }
+
+section.timeline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+ul.timeline-items {
+  max-width: 1300px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  list-style: none;
+  padding: 0;
+}
+
+ul.timeline-items::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background-color: var(--accent-color);
+  left: 50%;
+  }
+
+  ul.timeline-items li {
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  ul.timeline-items li:nth-child(odd) {
+    padding-right: 50%;
+    text-align: right;
+  }
+
+  ul.timeline-items li:nth-child(even) {
+    padding-left: 50%;
+    text-align: left;
+  }
+
+  ul.timeline-items li:last-child {
+    margin-bottom: 0;
+  }
