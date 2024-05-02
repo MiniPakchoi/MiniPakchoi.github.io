@@ -266,3 +266,56 @@ ul.timeline-items .timeline-content:hover {
   font-weight: 300;
   margin: 0;
 }
+
+section.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+section.projects ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  }
+
+section.projects ul li {
+  max-width: 400px;
+  min-width: 200px;
+  background-color: var(--accent-color);
+  border-radius: 1rem;
+  box-shadow: 4px 4px 10px var(--accent-color);
+  flex-shrink: 1;
+  flex-basis: 400px;
+}
+
+section.projects ul li img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+section.projects ul li h4 {
+  margin: 0.5rem 1rem;
+  font-size: 1.2em;
+}
+
+section.projects ul li p {
+  margin: 0 3rem 0.5rem 1rem;
+}
+
+section.projects ul li button {
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+  border-radius: 1rem;
+  padding: 0.8rem;
+  background-color: var(--primary-color);
+  font-size: 1.1em;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 0 4px black;
+
+}
