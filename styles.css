@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--background-color);
+  font-family: "Roboto";
 }
 
 main {
@@ -57,16 +58,16 @@ nav ul li:not(:last-child)::after {
 }
 
 nav ul li a {
-  color: white;
+  color: var(--accent-color);
   text-decoration: none;
   font-size: 1.2em;
-  text-shadow: 0 0 2px var(--primary-color);
+  text-shadow: 0 0 2px var(--accent-color);
   transition: all 0.5s ease;
 }
 
 nav ul li a:hover {
   color: var(--accent-color);
-  text-shadow: 0 0 10px var(--primary-color);
+  text-shadow: 0 0 10px var(--accent-color);
 }
 
 section.hero {
