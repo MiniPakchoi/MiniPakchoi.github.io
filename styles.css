@@ -333,6 +333,7 @@ section.projects ul li:hover {
   section.hero {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 0;
   }
 
   section.hero .hero-text {
@@ -360,20 +361,25 @@ section.projects ul li:hover {
     gap: 1rem;
     /*transform: scale(0.8);*/
   }
+
   section.skills ul li {
     width: 80%;
   }
+
   section.timeline {
     padding: 0.6rem;
   }
+
   section.timeline h2.timeline-title {
     margin: 0;
   }
+
   section.timeline ul.timeline-items {
     max-width: fit-content;
   }
+
   .timeline-content p {
-    max-width: 32vw;
+    max-width: 30vw;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -381,29 +387,47 @@ section.projects ul li:hover {
   main {
     max-width: 80%;
   }
-}
+  .timeline-content p {
+    max-width: 30vw;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  ul.timeline-items li:nth-child(odd) .timeline-content {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
 
-/*Project Mobile Section*/
-section.projects ul {
-  flex-direction: column;
-  align-items: center;
-}
+  /*Project Mobile Section*/
+  section.projects ul {
+    flex-direction: column;
+    align-items: center;
+  }
 
-section.projects ul li {
-  display: flex;
-  flex-direction: row;
-  max-width: 80%;
-  flex-basis: auto;
-  min-height: 25vh;
-}
+  section.projects ul li {
+    display: flex;
+    flex-direction: row;
+    max-width: 80%;
+    width: 90%;
+    flex-basis: auto;
+    min-height: 25vh;
+  }
 
-section.projects ul li .card-content {
-  display: flex;
-  flex-direction: column;
-}
+  section.projects ul li .card-content {
+    display: flex;
+    flex-direction: column;
+  }
 
-section.projects ul li img {
-  width: auto;
-  height: 100%;
-  border-radius: 1rem 0 0 1rem;
+  section.projects ul li img {
+    width: auto;
+    height: 100%;
+    border-radius: 1rem 0 0 1rem;
+  }
+
+  section.projects ul li .card-content a {
+    margin-top: auto;
+    margin-bottom: 0.3rem;
+    align-self: start;
+  }
 }
