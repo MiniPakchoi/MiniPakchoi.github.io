@@ -387,6 +387,7 @@ section.projects ul li:hover {
   main {
     max-width: 80%;
   }
+  
   .timeline-content p {
     max-width: 30vw;
     text-overflow: ellipsis;
