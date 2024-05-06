@@ -292,6 +292,7 @@ section.projects ul li {
   box-shadow: 4px 4px 10px var(--accent-color);
   flex-shrink: 1;
   flex-basis: 400px;
+  transition: all .3s ease;
 }
 
 section.projects ul li img {
