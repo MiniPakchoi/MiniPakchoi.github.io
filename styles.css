@@ -267,6 +267,14 @@ ul.timeline-items .timeline-content:hover {
   margin: 0;
 }
 
+section.certificate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
 section.projects {
   display: flex;
   flex-direction: column;
